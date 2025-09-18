@@ -5,8 +5,7 @@ import classNames from 'classnames';
 const MAX_ITMES = 16;
 // const API_URL_PRODUCTS = '/api/products'; old
 const API_URL_PRODUCTS =
-  'https://react-phone-marketplace-5caed759d6e3.herokuapp.com/api/hotdeals';
-
+  'https://react-phone-marketplace.herokuapp.com/api/hotdeals';
 type Sort = 'newest' | 'alphabetically' | 'cheapest';
 type Quantity = 1 | 4 | 8 | 16 | 'all';
 
