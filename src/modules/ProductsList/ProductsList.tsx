@@ -4,7 +4,8 @@ import { Product } from '../../types/Product';
 import classNames from 'classnames';
 const MAX_ITMES = 16;
 // const API_URL_PRODUCTS = '/api/products'; old
-const API_URL_PRODUCTS = '/api/hotdeals';
+const API_URL_PRODUCTS =
+  'https://react-phone-marketplace-5caed759d6e3.herokuapp.com/api/hotdeals';
 
 type Sort = 'newest' | 'alphabetically' | 'cheapest';
 type Quantity = 1 | 4 | 8 | 16 | 'all';
@@ -14,7 +15,7 @@ function getProducts(list: Product[], category: string) {
     // Добавим случай "все товары", если понадобится
     return [...list];
   }
-  
+
   return list.filter(product => product.category === category);
 }
 
